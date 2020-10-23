@@ -1,5 +1,6 @@
 .activity {
     padding-bottom: 0px;
+    margin: 0px auto;
     &-title {
         padding-top: 0px;
         margin-top: 0px;
@@ -20,12 +21,12 @@
           }
     }
     &-list {
-        display: flex;
-        justify-content: space-between;
         margin: 0px;
         padding-left: 0px;
+        padding-bottom: 60px;
         @media screen and (max-width:767px) {
             display: block;
+            width: 100%;
           }
     }
     &-item {

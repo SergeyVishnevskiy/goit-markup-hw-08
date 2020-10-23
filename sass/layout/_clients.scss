@@ -1,7 +1,9 @@
 
 .clients-list__items {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
     padding: 0px;
 }
 .clients-list__link {
