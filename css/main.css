@@ -22,6 +22,7 @@ a {
 
 img {
   display: block;
+  max-width: 100%;
   height: auto;
 }
 
@@ -36,12 +37,49 @@ img {
   padding-bottom: 94px;
 }
 
+@media screen and (min-width: 480px) {
+  .padding {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .padding {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .padding {
+    width: 1200px;
+  }
+}
+
 .container {
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
-  margin-left: auto;
   margin-right: auto;
-  width: 1200px;
+  margin-left: auto;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .title {
@@ -524,9 +562,23 @@ img {
   text-transform: uppercase;
 }
 
+@media screen and (max-width: 767px) {
+  .activity-title {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+}
+
 .activity-text {
   line-height: 1.714;
   color: #757575;
+}
+
+@media screen and (max-width: 767px) {
+  .activity-text {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
 }
 
 .activity-list {
@@ -534,6 +586,12 @@ img {
   justify-content: space-between;
   margin: 0px;
   padding-left: 0px;
+}
+
+@media screen and (max-width: 767px) {
+  .activity-list {
+    display: block;
+  }
 }
 
 .activity-item {
@@ -566,6 +624,10 @@ img {
 
 .activity-item:nth-child(4)::before {
   background-image: url(../svg/astronaut.svg);
+}
+
+.activity-item:not(:last-child) {
+  margin-bottom: 30px;
 }
 
 .work {
