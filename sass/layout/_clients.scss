@@ -2,15 +2,14 @@
 .clients-list__items {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    
     padding: 0px;
 }
 .clients-list__link {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 170px;
+    margin-bottom: 30px;
+    width: 210px;
     height: 90px;
     border: 1px solid #AFB1B8; 
     border-radius: 4px;
@@ -29,7 +28,7 @@
 }
 .link-go_client {
     display: flex;
-    width: 170px;
+    width: 210px;
     height: 90px;
     justify-content: center;
     align-items: center;
