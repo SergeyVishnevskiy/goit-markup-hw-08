@@ -2,8 +2,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    // max-width: 1600px;
-    // min-height: 600px;
+    
+    min-height: 400px;
     background: #2F303A;
     margin-left: auto;
     margin-right: auto;
@@ -11,11 +11,11 @@
     padding-bottom: 118px;
     text-align: center;
     color: $white-color;
-    // background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    // url(../image/hero-img.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../../image/mobile/mobile-header@1x-min.jpg);  
     &-title {
         margin-top: 0px;
         margin-bottom: 30px;
@@ -24,6 +24,46 @@
         line-height: 1.615;
         letter-spacing: 0.06em;
         text-transform: uppercase;
-        width: 360px;
+        max-width: 360px;
     }
 }
+@media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../../image/mobile/mobile-header@2x-min.jpg);
+    }
+}
+@media screen and (min-width: 768px) {
+    .hero {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../../image/tablet/tablet-header@1x-min.jpg);
+    }
+    @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../../image/tablet/tablet-header@2x-min.jpg);
+        }
+    }
+}
+@media screen and (min-width: 1200px) {
+    .hero {
+        min-height: 600px;
+        padding-top: 200px;
+        padding-bottom: 200px;
+        background-image: inear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
+        url(../../image/decktop/decktop-header@1x.jpg);
+    }
+    @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .hero {
+        background-image: inear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../../image/decktop/decktop-header@2x.jpg);
+        }
+    }
+  }
+
