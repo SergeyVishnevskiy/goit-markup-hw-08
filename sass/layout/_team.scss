@@ -4,7 +4,10 @@
 .team-list {
     display: block;
     text-align: center;
-    padding-left: 0px;
+    padding-left: 0px; 
+    &__items:not(:last-child) {
+        margin-bottom: 30px;
+    }
 }
 .items-text {
     color: $title-text-color;
@@ -21,3 +24,4 @@
     line-height: 1.19;
     margin-bottom: 10px;
 }
+

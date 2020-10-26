@@ -826,6 +826,10 @@ img {
   padding-left: 0px;
 }
 
+.team-list__items:not(:last-child) {
+  margin-bottom: 30px;
+}
+
 .items-text {
   color: #757575;
   line-height: 1.714;
@@ -1090,7 +1094,7 @@ img {
 
 .portfolio-items {
   display: inline-block;
-  width: 450px;
+  width: 100%;
 }
 
 .portfolio-items:not(:last-child) {
