@@ -64,22 +64,27 @@
     .activity-list {
         display: flex;
         flex-wrap: wrap;
-        margin: -15px;
+        margin: -30px;
     }
     .activity-item {
-        width: calc((100% - 4 * 15) / 2);
-        margin: 15px;
+        width: calc((100% - 4 * 30) / 2);
+        margin: 30px;
     }
 }
 @media screen and (min-width:1200px) {
     .activity-list {
         display: flex;
         flex-wrap: nowrap;
-        justify-content: center;
-        align-items: center;
+        justify-content: space-between;
         margin: 0px;
         padding-left: 0px;
         padding-bottom: 0;
+    }
+    .activity-item {
+        width: 270px;
+        margin: 0px;
+        align-items: baseline;
+        
     }
 
 }
