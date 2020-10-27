@@ -37,7 +37,15 @@
         margin-right: 10px;
     }
 }
+@media screen and (min-width: 1200px) {
+    .join {
+        margin: 0px;
+    &-title {
+        text-align: left;
+        }
+    }
 
+}
 
 
 
