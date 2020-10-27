@@ -77,18 +77,30 @@
         // margin-right: 30px;
         position: relative;
     }
-    &-item:not(:last-child) {
+    // &-item:not(:last-child) {
+    //     margin-bottom: 40px;
+    // }
+}
+
+@media screen and (max-width: 767px) {
+    .navigation-item:not(:last-child) {
         margin-bottom: 40px;
     }
-}
-.navigation-list-deck {
-    @media screen and (max-width: 767px) {
-   display: none;
-    }
-}
-.address-deck {
-    @media screen and (max-width: 767px) {
+    .navigation-list-deck {
         display: none;
+    }
+    .address-deck {
+        display: none;
+    }
+    .address-list__items:not(:last-child) {
+        margin-bottom: 16px;
+    }
+    .address-list__header {
+        align-items: baseline;
+        align-items: center;
+    }
+    .contacts {
+        justify-content: space-between;
     }
 }
 
@@ -97,19 +109,14 @@
     flex-direction: column;
     margin-left: auto;
     margin-right: auto;
-    align-items: center;
 }
 .address-list__items {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.address-list__items:not(:last-child) {
-    margin-bottom: 16px;
-}
 .contacts {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     color: $title-text-color;
     font-style: normal;
@@ -192,5 +199,50 @@
     }
     .menu-button {
         display: none;
+    }
+    .header-page {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .navigation-list {
+        flex-direction: row;
+        margin-bottom: 0px;
+    }
+    .contacts {
+        font-size: 12px;
+        line-height: 1.167;
+    }
+    .navigation-item {
+        font-size: 14px;
+        line-height: 1.167;
+        margin-bottom: 0;
+        padding: 32px 0px;
+    }.navigation-item:not(:last-child) {
+        margin-right: 50px;
+    }
+    .navigation-list .link.current::after {
+        bottom: -2px;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .address-list__items:not(:last-child) {
+        margin-bottom: 10px;
+    }
+}
+@media screen and (min-width: 1200px){
+    .contacts {
+        font-size: 14px;
+        line-height: 1.143;
+        margin-left: 30px;
+    }
+    .address-list__header {
+        flex-direction: row;
+        padding-top: 32px;
+        padding-bottom: 32px;
+        align-items: center;
+    }
+    .navigation-list .link.current::after {
+        bottom: -4px;
     }
 }
