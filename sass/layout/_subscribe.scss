@@ -1,6 +1,4 @@
-.subscribe-box {
-    max-width: 450px;
-}
+
 .subscribe-box-wrapper {
     text-align: center;
 }
@@ -65,5 +63,37 @@
         height: 24px;
         } 
 }
+@media screen and (max-width: 767px) {
+    .subscribe-box {
+        max-width: 450px;
+    }
+}
 
-
+@media screen and (min-width: 768px) {
+    .subscribe-box {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .subscribe-email {
+        max-width: 450px;  
+    }
+}
+@media screen and (min-width: 1200px) {
+    .subscribe-box {
+        width: 570px;
+        margin: 0px;
+    }
+    .subscribe-box-wrapper {
+        display: flex;
+    }
+    .subscribe-title {
+        text-align: left;
+    }
+    .subscribe-button{
+        margin: 0px;
+    }
+    .subscribe-email {
+        max-width: 358px;  
+        margin-left: 0px;
+    }
+}
