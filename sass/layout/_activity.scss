@@ -30,7 +30,7 @@
           }
     }
     &-item {
-        flex-basis: calc((100% - 3 * 30px) / 4);
+       // width: calc((100% - 3 * 30px) / 4);
         &::before {
             display: block;
             content: '';
@@ -54,21 +54,27 @@
         &:nth-child(4)::before {
             background-image: url(../svg/astronaut.svg);
         }
-        &:not(:last-child) {
-            margin-bottom: 30px;
-        }
+        // &:not(:last-child) {
+        //     margin-bottom: 30px;
+        // }
            
     }
 }  
+@media screen and (max-width:767px) {
+    .activity-item:not(:last-child) {
+        margin-bottom: 30px;
+    } 
+} 
 @media screen and (min-width:768px) {
     .activity-list {
         display: flex;
         flex-wrap: wrap;
-        margin: -30px;
+        margin: -15px;
     }
     .activity-item {
-        width: calc((100% - 4 * 30) / 2);
-        margin: 30px;
+        //width: calc((100% - 2 * 30) / 2);
+        width: calc((100% - 2 * 30px) / 2);
+        margin: 15px;
     }
 }
 @media screen and (min-width:1200px) {
@@ -84,7 +90,6 @@
         width: 270px;
         margin: 0px;
         align-items: baseline;
-        
     }
 
 }
