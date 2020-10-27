@@ -748,10 +748,6 @@ img {
   }
 }
 
-.activity-item {
-  flex-basis: calc((100% - 3 * 30px) / 4);
-}
-
 .activity-item::before {
   display: block;
   content: '';
@@ -780,19 +776,21 @@ img {
   background-image: url(../svg/astronaut.svg);
 }
 
-.activity-item:not(:last-child) {
-  margin-bottom: 30px;
+@media screen and (max-width: 767px) {
+  .activity-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
 @media screen and (min-width: 768px) {
   .activity-list {
     display: flex;
     flex-wrap: wrap;
-    margin: -30px;
+    margin: -15px;
   }
   .activity-item {
-    width: calc((100% - 4 * 30) / 2);
-    margin: 30px;
+    width: calc((100% - 2 * 30px) / 2);
+    margin: 15px;
   }
 }
 
@@ -974,6 +972,22 @@ img {
   padding-bottom: 60px;
 }
 
+@media screen and (min-width: 768px) {
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-container {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+}
+
 .footer-address {
   width: 232px;
   margin: 0 auto 60px;
@@ -1016,6 +1030,16 @@ img {
   font-weight: bold;
   font-size: 24px;
   line-height: 1.167;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-address {
+    margin: 0px;
+    text-align: left;
+  }
+  .address-list {
+    text-align: left;
+  }
 }
 
 .join {
@@ -1064,8 +1088,13 @@ img {
   margin-right: 10px;
 }
 
-.subscribe-box {
-  max-width: 450px;
+@media screen and (min-width: 1200px) {
+  .join {
+    margin: 0px;
+  }
+  .join-title {
+    text-align: left;
+  }
 }
 
 .subscribe-box-wrapper {
@@ -1139,6 +1168,42 @@ img {
   background-image: url(../svg/icon-subscribe.svg);
   width: 24px;
   height: 24px;
+}
+
+@media screen and (max-width: 767px) {
+  .subscribe-box {
+    max-width: 450px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .subscribe-box {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .subscribe-email {
+    max-width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .subscribe-box {
+    width: 570px;
+    margin: 0px;
+  }
+  .subscribe-box-wrapper {
+    display: flex;
+  }
+  .subscribe-title {
+    text-align: left;
+  }
+  .subscribe-button {
+    margin: 0px;
+  }
+  .subscribe-email {
+    max-width: 358px;
+    margin-left: 0px;
+  }
 }
 
 .portfolio__menu-list {
@@ -1227,7 +1292,7 @@ img {
   margin: 0;
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 400px) {
   .portfolio-actions__text {
     padding-top: 25px;
     padding-bottom: 25px;
